@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'solo'; /* Specify the name for your font */
+    src: url('solo.ttf'), /* Specify the path to your font file */
+    
+}
+
+
+body {
+   
+    text-align: center; /* Center align content */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    font-family: 'solo'; /* Use the custom font as the main font */
+}
+h1 {
+    color: #00ff00; /* Set color of h1 text to white */
+    font-family: 'solo';
+    font-size: 150px;
+    margin-bottom: 50px;
+}
+.container {
+    margin-top: 1px; /* Adjust vertical spacing */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:hover{
+    color:#00ff00;
+}
+
+img {
+    max-width: 15%; /* Make image responsive */
+    margin-top: 1px; /* Adjust vertical spacing */
+    animation: rotateImage 8s linear infinite; /* Apply animation */
+    margin-bottom: 50px;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}

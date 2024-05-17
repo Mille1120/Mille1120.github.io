@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'solo'; /* Specify the name for your font */
+    src: url('solo.ttf'); /* Specify the path to your font file */
+}
+
+body {
+    font-family: 'solo'; /* Use the custom font as the main font */
+    text-align: center; /* Center align content */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+}
+
+h1 {
+    color: #00ff00; /* Set color of h1 text to green */
+    font-size: 150px;
+    margin-bottom: 50px; /* Adjust margin to create space between title and content */
+}
+
+.container {
+    margin-top: 100px; /* Adjust vertical spacing */
+}
+
+.scroll-box {
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: rgba(246, 224, 224, 0.1); /* Semi-transparent background */
+    padding: 100px; /* Add padding */
+    max-height: 400px; /* Set maximum height for the scroll box */
+    margin-bottom: 50px; /* Add margin to create space between scroll box and buttons */
+    border: none; /* Remove border */
+}
+
+
+.scroll-content {
+    padding: 0 20px; /* Add padding to create space for scrollbar */
+    text-align: left; /* Align text to the left */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:hover {
+    color: #00ff00; /* Change text color to green when hovering */
+}
