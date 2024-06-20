@@ -1,0 +1,57 @@
+body {
+    text-align: center; /* Center align content */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    font-family: 'solo'; /* Use the custom font as the main font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 30%; /* Make image responsive */
+    max-width: 200px; /* Ensure image does not get too large */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Adjust vertical spacing */
+    animation: rotateImage 8s linear infinite; /* Apply animation */
+    margin-bottom: 50px;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15vw; /* Adjust font size for smaller screens */
+    }
+    .button {
+        font-size: 5vw; /* Adjust button size for smaller screens */
+        padding: 8px 16px; /* Adjust padding */
+    }
+    img {
+        width: 50%; /* Adjust image size for smaller screens */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw; /* Adjust font size for mobile screens */
+    }
+    .button {
+        font-size: 6vw; /* Adjust button size for mobile screens */
+        padding: 6px 12px; /* Adjust padding */
+    }
+    img {
+        width: 70%; /* Adjust image size for mobile screens */
+    }
+}

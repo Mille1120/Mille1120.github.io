@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'solo'; 
+    src: url('solo.ttf');
+}
+
+body {
+    font-family: 'solo';
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 50vh; /* Set max height relative to viewport height */
+    margin-bottom: 50px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.scroll-content {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.text-left p {
+    margin: 0;
+}
+
+
+
+.highlight {
+    color: #00ff00; /* Change this to the color you want */
+}
+
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15vw;
+    }
+    .button {
+        font-size: 5vw !important;
+        padding: 8px 16px;
+    }
+    .scroll-box {
+        padding: 15px;
+        max-height: 60vh;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw;
+    }
+    .button {
+        font-size: 6vw !important;
+        padding: 6px 12px;
+    }
+    .scroll-box {
+        padding: 10px;
+        max-height: 70vh;
+    }
+}

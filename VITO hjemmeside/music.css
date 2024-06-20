@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'solo';
+    src: url('solo.ttf');
+}
+
+body {
+    font-family: 'solo';
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* This allows images to wrap to the next line on smaller screens */
+    gap: 85px; /* Add more space between images */
+    margin-bottom: 50px;
+    text-decoration: none;
+    
+}
+
+.image {
+    flex: 0 0 200px; /* Fixes the width of each image container */
+    text-align: center;
+}
+.image-inner {
+    width: 200px; /* Set the width of the images */
+    height: 180px; /* Set the height of the images */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image img {
+    width: 200px; /* Set the width of the images */
+    
+}
+
+.image-inner.yt img {
+    width: 140px; /* Set the width of the images */
+}
+
+.image-inner.spotify img {
+    width: 140px; /* Set the width of the images */
+}
+
+.image p {
+    color: white;
+    margin-top: 20px;
+}
+
+a:hover .image p {
+    color: #00ff00; /* Change text color to #00ff00 on hover */
+}
+
+
+
+
+
+/* Media query to ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+    
+    h1 {
+        font-size: 100px;
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .image {
+        margin-bottom: 40px; /* Add more space between images */
+    }
+
+    .image-inner {
+        width: 100%; /* Set the width of the images */
+    }
+    
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw; /* Adjust font size for mobile screens */
+    }
+    .button {
+        font-size: 6vw; /* Adjust button size for mobile screens */
+        padding: 6px 12px; /* Adjust padding */
+    }
+    img {
+        width: 70%; /* Adjust image size for mobile screens */
+    }
+
+    .image-inner {
+        width: 100%; /* Set the width of the images */
+    }
+}

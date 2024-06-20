@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'solo'; /* Specify the name for your font */
+    src: url('solo.ttf'); /* Specify the path to your font file */
+}
+
+.container {
+    margin-top: 20px; /* Adjust vertical spacing */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+h1 {
+    color: #00ff00; /* Set color of h1 text to white */
+    font-family: 'solo';
+    font-size: 10vw; /* Make font size responsive */
+    margin-bottom: 50px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:hover {
+    color: #00ff00;
+}
+
+.button.active {
+    color: #00ff00;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw;
+    }
+    .button {
+        font-size: 6vw;
+        padding: 6px 12px;
+    }
+    .scroll-box {
+        padding: 10px;
+        max-height: 70vh;
+    }
+}
