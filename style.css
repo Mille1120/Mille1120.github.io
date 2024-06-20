@@ -1,49 +1,20 @@
 @font-face {
     font-family: 'solo'; /* Specify the name for your font */
-    src: url('solo.ttf'), /* Specify the path to your font file */
-    
-}
-
-body {
-    font-family: 'solo'; /* Use the custom font as the main font */
-    text-align: center; /* Center align content */
-    background-color: black; /* Set background color to black */
-    color: white; /* Set text color to white */
-}
-
-h1 {
-    color: #00ff00; /* Set color of h1 text to green */
-    font-size: 150px;
-    margin-bottom: 50px; /* Adjust margin to create space between title and images */
+    src: url('solo.ttf'); /* Specify the path to your font file */
 }
 
 .container {
-    margin-top: 100px; /* Adjust vertical spacing */
+    margin-top: 20px; /* Adjust vertical spacing */
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-around; /* Align images horizontally with space around them */
+h1 {
+    color: #00ff00; /* Set color of h1 text to white */
+    font-family: 'solo';
+    font-size: 10vw; /* Make font size responsive */
     margin-bottom: 50px;
 }
 
-.image {
-    flex: 1;
-    margin: 0 20px; /* Adjust margin between images */
-}
-
-
-    .image img {
-        width: 200px; /* Set the width of the image */
-        height: 200px; /* Set the height of the image */
-    }
-    
-
-
-.image p {
-    color: white; /* Set color of text under images to white */
-    margin-top: 20px; /* Add margin between image and text */
-}
 
 .button {
     display: inline-block;
@@ -53,11 +24,34 @@ h1 {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 2vw;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .button:hover {
-    color: #00ff00; /* Change text color to green when hovering */
+    color: #00ff00;
+}
+
+.button.active {
+    color: #00ff00;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw;
+    }
+    .button {
+        font-size: 6vw;
+        padding: 6px 12px;
+    }
+    .scroll-box {
+        padding: 10px;
+        max-height: 70vh;
+    }
 }

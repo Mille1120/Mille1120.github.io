@@ -1,62 +1,98 @@
 @font-face {
-    font-family: 'solo'; /* Specify the name for your font */
-    src: url('solo.ttf'); /* Specify the path to your font file */
+    font-family: 'solo' ; 
+    src: url('solo.ttf'); 
+}
+
+@font-face {
+    font-family: 'akzidenz-grotesk' ; 
+    src: url('akzidenz-grotesk.ttf'); 
 }
 
 body {
-    font-family: 'solo'; /* Use the custom font as the main font */
-    text-align: center; /* Center align content */
-    background-color: black; /* Set background color to black */
-    color: white; /* Set text color to white */
-}
-
-h1 {
-    color: #00ff00; /* Set color of h1 text to green */
-    font-size: 150px;
-    margin-bottom: 50px; /* Adjust margin to create space between title and content */
-}
-
-.container {
-    margin-top: 100px; /* Adjust vertical spacing */
+    font-family: 'solo';
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .content-container {
     display: flex;
-    justify-content: center; /* Center align content horizontally */
-    align-items: center; /* Center align content vertically */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .text {
     flex: 1;
-    text-align: left; /* Align text to the left */
-    padding: 0 20px; /* Add padding to create space between text and image */
-    margin-left: 200px;
+    text-align: left;
+    padding: 0 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.text p {
+    line-height: 140%;
+    letter-spacing: 1px;
+    /* font-family: arial; */
 }
 
 .image {
     flex: 1;
+    text-align: center;
 }
 
 .image img {
-    max-width: 100%; /* Make image responsive */
-    width: 300px; /* Set the width of the image */
-        height: 350px; /* Set the height of the image */
+    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #000000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.3s;
+.highlight {
+    color: #00ff00; /* Change this to the color you want */
 }
 
-.button:hover {
-    color: #00ff00; /* Change text color to green when hovering */
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15vw;
+    }
+    .button {
+        font-size: 5vw;
+        padding: 8px 16px;
+    }
+
+    .content-container {
+        flex-direction: column;
 }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20vw;
+    }
+    .button {
+        font-size: 6vw;
+        padding: 6px 12px;
+    }
+    .text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .image {
+        margin-top: 20px;
+    }
+
+    .content-container {
+            flex-direction: column;
+    }
+}
+

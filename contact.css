@@ -16,34 +16,16 @@ body {
     flex-wrap: wrap; /* This allows images to wrap to the next line on smaller screens */
     gap: 85px; /* Add more space between images */
     margin-bottom: 50px;
-    text-decoration: none;
-    
 }
 
 .image {
     flex: 0 0 200px; /* Fixes the width of each image container */
     text-align: center;
 }
-.image-inner {
-    width: 200px; /* Set the width of the images */
-    height: 180px; /* Set the height of the images */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
 .image img {
     width: 200px; /* Set the width of the images */
-    
-}
-
-.image-inner.yt img {
-    width: 140px; /* Set the width of the images */
-}
-
-.image-inner.spotify img {
-    width: 140px; /* Set the width of the images */
+    height: 200px; /* Set the height of the images */
 }
 
 .image p {
@@ -51,10 +33,24 @@ body {
     margin-top: 20px;
 }
 
+.image-inner {
+    width: 200px; /* Set the width of the images */
+    height: 160px; /* Set the height of the images */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-inner img{
+    width: 140px; /* Set the width of the images */
+    height: 140px; /* Set the height of the images */
+}
+
+
 a:hover .image p {
     color: #00ff00; /* Change text color to #00ff00 on hover */
 }
-
 
 
 
@@ -76,25 +72,23 @@ a:hover .image p {
     .image {
         margin-bottom: 40px; /* Add more space between images */
     }
+}
 
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15vw;
+    }
     .image-inner {
         width: 100%; /* Set the width of the images */
     }
-    
 }
 
-/* For mobile phones */
+    /* For mobile phones */
 @media (max-width: 480px) {
     h1 {
-        font-size: 20vw; /* Adjust font size for mobile screens */
-    }
-    .button {
-        font-size: 6vw; /* Adjust button size for mobile screens */
-        padding: 6px 12px; /* Adjust padding */
-    }
-    img {
-        width: 70%; /* Adjust image size for mobile screens */
-    }
+        font-size: 15vw;
+    } 
 
     .image-inner {
         width: 100%; /* Set the width of the images */
